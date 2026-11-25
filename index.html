@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="소프트웨어와 클라우드 인프라를 탐구하는 주니어 개발자 김원재의 포트폴리오">
+    <meta name="theme-color" content="#090b0f">
+    <meta property="og:title" content="KIM WONJAE — Developer & Cloud Engineer">
+    <meta property="og:description" content="Beyond Code. Building Better Experiences and Reliable Systems.">
+    <meta property="og:type" content="website">
+    <title>KIM WONJAE — Developer & Cloud Engineer</title>
+    <script>
+      (function () {
+        var d = document.documentElement;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        d.classList.add("legend-js");
+        try {
+          if (!sessionStorage.getItem("legend-seen")) {
+            d.classList.add("legend-loading");
+            sessionStorage.setItem("legend-seen", "1");
+          } else d.classList.add("legend-intro");
+        } catch (e) { d.classList.add("legend-intro"); }
+        setTimeout(function () {
+          if (d.classList.contains("legend-loading")) { d.classList.remove("legend-loading"); d.classList.add("legend-intro"); }
+        }, 6000);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/legend.css">
+  </head>
+  <body>
+    <div class="legend-loader" aria-hidden="true">
+      <div class="loader-top"><span>KIM WONJAE — PORTFOLIO</span><span>BOOTING SYSTEMS</span></div>
+      <div class="loader-name"><span style="--l:0">K</span><span style="--l:1">I</span><span style="--l:2">M</span><span class="loader-gap"></span><span style="--l:3">W</span><span style="--l:4">O</span><span style="--l:5">N</span><span style="--l:6">J</span><span style="--l:7">A</span><span style="--l:8">E</span></div>
+      <div class="loader-bottom"><span class="loader-count" data-loader-count>000</span><div class="loader-bar"><i data-loader-bar></i></div><span>BACKEND · CLOUD</span></div>
+    </div>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <div class="scroll-progress" aria-hidden="true"><i></i></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"><span>VIEW</span></div>
+    <div class="ambient-noise" aria-hidden="true"></div>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="김원재 포트폴리오 홈">
+        <span class="brand-mark">KW</span><span class="brand-name">KIM WONJAE</span>
+      </a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button language-toggle" type="button" aria-label="언어 변경"><span>KR</span><span class="slash">/</span><span>EN</span></button>
+        <button class="icon-button theme-toggle" type="button" aria-label="라이트 모드로 변경"><span class="theme-icon" aria-hidden="true">◐</span></button>
+        <a class="button button-small resume-link" href="#contact">Resume <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
+      </div>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="모바일 메뉴">
+        <a href="#home">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-orb" aria-hidden="true"></div>
+        <div class="hero-aurora aurora-one" aria-hidden="true"></div>
+        <div class="hero-aurora aurora-two" aria-hidden="true"></div>
+        <div class="hero-wordmark" aria-hidden="true">WONJAE</div>
+        <div class="hero-coordinate" aria-hidden="true">37.5665° N<br>126.9780° E</div>
+        <div class="hero-content hero-resume">
+          <figure class="profile-photo-card hero-reveal" data-parallax style="--i:6">
+            <div class="profile-network" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><span></span><span></span><span></span></div>
+            <div class="photo-frame-label"><span>PROFILE / 01</span><span>PORTRAIT</span></div>
+            <div class="portrait-placeholder" data-tilt="10">
+              <img class="profile-photo" src="/assets/images/kim-wonjae-profile.webp" alt="김원재 프로필 사진" width="354" height="472" fetchpriority="high" decoding="async">
+            </div>
+            <div class="hero-terminal" aria-hidden="true">
+              <div class="term-bar"><i></i><i></i><i></i><span>wonjae@cloud: ~</span></div>
+              <div class="term-body" data-term></div>
+            </div>
+          </figure>
+          <div class="hero-copy">
+            <p class="hero-status hero-reveal" style="--i:0"><i aria-hidden="true"></i>AVAILABLE FOR OPPORTUNITIES</p>
+            <p class="eyebrow hero-reveal" data-scramble style="--i:1">PROFILE <span>/</span> 2026</p>
+            <h1 id="hero-title" class="hero-title">
+              <span class="hero-reveal hero-name" style="--i:2"><span class="sr-only">김원재</span><span class="hero-chars" aria-hidden="true"><span class="char" style="--c:0">김</span><span class="char" style="--c:1">원</span><span class="char" style="--c:2">재</span></span></span>
+              <small class="hero-reveal" data-scramble style="--i:3">KIM WONJAE</small>
+            </h1>
+            <dl class="hero-profile-table hero-reveal" style="--i:4">
+              <div><dt>희망 직무</dt><dd><strong>백엔드 개발자</strong><i></i><strong>클라우드 엔지니어</strong></dd></div>
+              <div><dt>관심 분야</dt><dd>Backend Architecture · Cloud Infrastructure</dd></div>
+            </dl>
+            <p class="hero-profile-statement hero-reveal" style="--i:5">백엔드와 클라우드를 학습하며,<br><strong>서비스의 흐름을 이해하는 개발자</strong>로 성장하고 있습니다.</p>
+            <div class="hero-actions hero-reveal" style="--i:6">
+              <a class="button button-primary magnetic" href="#projects">프로젝트 보기 <span aria-hidden="true">↓</span></a>
+              <a class="button button-ghost resume-link" href="#contact">이력서 다운로드 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-footer">
+          <a href="#projects" class="scroll-cue"><span class="scroll-line"></span>VIEW SELECTED WORK</a>
+          <div class="hero-meta"><span>SEOUL, SOUTH KOREA</span><span>AVAILABLE FOR OPPORTUNITIES</span></div>
+        </div>
+      </section>
+
+      <div class="legend-marquee" aria-hidden="true">
+        <div class="marquee-row">
+          <div class="marquee-track">
+            <div class="marquee-group"><span class="is-fill">BACKEND</span><i>✦</i><span class="is-outline">CLOUD</span><i>✦</i><span class="is-fill">INFRASTRUCTURE</span><i>✦</i><span class="is-outline">RELIABLE SYSTEMS</span><i>✦</i></div>
+            <div class="marquee-group"><span class="is-fill">BACKEND</span><i>✦</i><span class="is-outline">CLOUD</span><i>✦</i><span class="is-fill">INFRASTRUCTURE</span><i>✦</i><span class="is-outline">RELIABLE SYSTEMS</span><i>✦</i></div>
+          </div>
+        </div>
+        <div class="marquee-row is-reverse">
+          <div class="marquee-track">
+            <div class="marquee-group"><span class="is-outline">BEYOND CODE</span><i>✦</i><span class="is-plain">BETTER EXPERIENCES</span><i>✦</i><span class="is-outline">SERVICE FLOW</span><i>✦</i></div>
+            <div class="marquee-group"><span class="is-outline">BEYOND CODE</span><i>✦</i><span class="is-plain">BETTER EXPERIENCES</span><i>✦</i><span class="is-outline">SERVICE FLOW</span><i>✦</i></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" id="projects">
+        <div class="section-heading split-heading reveal">
+          <div><p class="section-label" data-scramble>01 <span>/</span> SELECTED WORK</p><h2>만들고 검증한<br><em>프로젝트.</em></h2></div>
+          <p class="section-intro">담당 범위와 실제 기여를 중심으로 정리했습니다.</p>
+        </div>
+        <div class="projects-list">
+          <article class="project-card reveal">
+            <a class="project-visual visual-anok" data-cursor-label="OPEN" data-tilt="6" href="projects/anok.html" aria-label="ANOK 프로젝트 상세 보기">
+              <img class="project-cover-image" src="/assets/images/anok-cover.webp" alt="ANOK AI 협업 플랫폼 프로젝트 표지" width="1672" height="941" loading="lazy" decoding="async">
+              <span class="project-arrow">↗</span>
+            </a>
+            <div class="project-copy"><div class="project-topline"><span>PROJECT 01</span><span>2025 · TEAM</span></div><h3><a href="projects/anok.html">ANOK</a></h3><p class="project-category">AI Meeting & Knowledge Platform</p><p>회의 정보와 후속 업무를 연결하는 AI 협업 플랫폼.</p>
+              <div class="project-role"><span>MY CONTRIBUTION</span><p>Frontend Web UI · Tauri Desktop UI · Integration Testing · QA & Collaboration</p></div>
+              <div class="project-links"><a class="text-link" href="projects/anok.html">View Case Study <span>↗</span></a><span class="disabled-link" aria-disabled="true">Repository · Private</span></div>
+            </div>
+          </article>
+          <article class="project-card project-reverse reveal">
+            <a class="project-visual visual-haru" data-cursor-label="OPEN" data-tilt="6" href="projects/haru-signal.html" aria-label="하루 시그널 프로젝트 상세 보기">
+              <img class="project-cover-image" src="/assets/images/haru-signal-cover.webp" alt="하루 시그널 AI 사진 일기 프로젝트 표지" width="1672" height="941" loading="lazy" decoding="async">
+              <span class="project-arrow">↗</span>
+            </a>
+            <div class="project-copy"><div class="project-topline"><span>PROJECT 02</span><span>2025 · TEAM</span></div><h3><a href="projects/haru-signal.html">하루 시그널</a></h3><p class="project-category">AI Photo Diary Application</p><p>사진과 위치 정보로 일기 초안을 만드는 AI 사진 일기.</p>
+              <div class="project-role"><span>MY CONTRIBUTION</span><p>React Frontend · API Integration · Photo Upload UI · Error Handling</p></div>
+              <a class="project-highlight" href="projects/haru-signal.html#troubleshooting"><span class="highlight-tag">TROUBLESHOOTING</span><span class="highlight-text">4개 서비스에 걸친 연쇄 장애, 원인 8가지를 추적해 해결</span><span class="highlight-arrow" aria-hidden="true">→</span></a>
+              <div class="project-links"><a class="text-link" href="projects/haru-signal.html">View Case Study <span>↗</span></a><span class="disabled-link" aria-disabled="true">Demo · 준비 중</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <p class="section-label reveal" data-scramble>02 <span>/</span> CONTACT</p>
+        <h2 class="reveal">함께 만들 기회를<br>기다립니다.</h2>
+        <p class="contact-copy reveal">채용, 인턴십, 프로젝트 협업에 관한 연락을 환영합니다.</p>
+        <div class="contact-actions reveal">
+          <a class="button button-primary magnetic" href="mailto:kimamzo93@gmail.com">Contact Me <span>↗</span></a>
+          <a class="button button-ghost" href="https://github.com/Wajae0108" target="_blank" rel="noreferrer">View GitHub <span>↗</span></a>
+          <button class="button button-ghost placeholder-action" type="button" data-message="이력서 파일이 등록되면 활성화됩니다.">Download Resume <span>↓</span></button>
+        </div>
+        <p class="contact-notice" role="status">kimamzo93@gmail.com · Resume 준비 중</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><h2>KIM WONJAE</h2><p>ASPIRING SOFTWARE & CLOUD ENGINEER</p></div>
+      <div class="footer-nav"><div><p>NAVIGATION</p><a href="#home">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><div><p>CONNECT</p><a href="https://github.com/Wajae0108" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:kimamzo93@gmail.com">Email ↗</a><span>Resume · 준비 중</span></div></div>
+      <div class="footer-bottom"><p>© 2026 KIM WONJAE. DESIGNED & BUILT WITH PURPOSE.</p><a href="#home">BACK TO TOP <span>↑</span></a></div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

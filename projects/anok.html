@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ANOK 프로젝트 케이스 스터디 — 김원재 포트폴리오"><title>ANOK Case Study — KIM WONJAE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;600;700&display=optional" rel="stylesheet">
+  <link rel="stylesheet" href="/css/reset.css"><link rel="stylesheet" href="/css/variables.css"><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/layout.css"><link rel="stylesheet" href="/css/components.css"><link rel="stylesheet" href="/css/animations.css"><link rel="stylesheet" href="/css/responsive.css"><link rel="stylesheet" href="/css/legend.css"><script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("legend-js","legend-intro")</script>
+</head>
+<body class="case-page">
+  <div class="scroll-progress" aria-hidden="true"><i></i></div><div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"><span>VIEW</span></div><div class="ambient-noise" aria-hidden="true"></div>
+  <header class="site-header" data-header><a class="brand" href="../"><span class="brand-mark">KW</span><span class="brand-name">KIM WONJAE</span></a><a class="button button-small" href="../">← Portfolio</a></header>
+  <main>
+    <section class="case-hero">
+      <div class="case-breadcrumb"><a href="../">Portfolio</a><span>/</span><span>ANOK</span></div>
+      <p class="section-label">CASE STUDY <span>/</span> 01</p><h1>ANOK</h1>
+      <p class="case-lead">회의에서 만들어진 정보를 실행 가능한 지식으로 연결하는<br>AI 기반 회의·업무 관리 플랫폼.</p>
+      <div class="case-meta"><div><span>CATEGORY</span><p>Meeting & Knowledge Management</p></div><div><span>ROLE</span><p>Frontend · Integration Testing · QA</p></div><div><span>TYPE</span><p>Team Project</p></div></div>
+      <figure class="case-cover case-cover-image"><img src="/assets/images/anok-cover.webp" alt="ANOK AI 협업 플랫폼 프로젝트 표지" width="1672" height="941" fetchpriority="high" decoding="async"></figure>
+    </section>
+    <article class="case-content">
+      <aside class="case-index"><p>ON THIS PAGE</p><a href="#overview">01 Overview</a><a href="#problem">02 Problem</a><a href="#role">03 My Role</a><a href="#system">04 System</a><a href="#testing">05 Testing</a><a href="#lessons">06 Lessons</a></aside>
+      <div class="case-sections">
+        <section id="overview" class="case-section reveal"><span>01 / OVERVIEW</span><h2>회의 이후의 정보 단절을<br>줄이기 위한 협업 경험.</h2><p>ANOK는 회의와 업무 과정에서 발생하는 정보를 체계화해, 회의 결과와 후속 업무의 전달 및 관리 효율을 높이는 협업 플랫폼입니다. 프론트엔드 웹 UI와 Tauri 기반 데스크톱 인터페이스 구현에 참여했습니다.</p></section>
+        <section id="problem" class="case-section reveal"><span>02 / PROBLEM DEFINITION</span><h2>기록된 회의가 실제 행동으로<br>이어지지 않는 문제.</h2><div class="case-grid"><article><b>01</b><h3>Information Gap</h3><p>회의 내용과 후속 업무가 서로 다른 맥락으로 전달될 수 있습니다.</p></article><article><b>02</b><h3>Flow Complexity</h3><p>과도한 절차는 기능이 있어도 사용자가 흐름을 이탈하게 만듭니다.</p></article><article><b>03</b><h3>Integration Risk</h3><p>프론트엔드, 백엔드, AI 서비스 간 응답과 상태를 함께 검증해야 합니다.</p></article></div></section>
+        <section id="role" class="case-section contribution-section reveal"><span>03 / MY ROLE & CONTRIBUTION</span><h2>직접 담당한 범위.</h2><ul class="contribution-list"><li><span>01</span>Frontend Web UI Development</li><li><span>02</span>Desktop UI Implementation with Tauri</li><li><span>03</span>UI/UX Flow Review</li><li><span>04</span>Integration Testing & QA</li><li><span>05</span>Bug Reporting and Cross-team Collaboration</li></ul><p class="case-note">AI 모델 개발 및 백엔드 전체 설계는 담당 범위에 포함되지 않습니다.</p></section>
+        <section id="system" class="case-section reveal"><span>04 / SYSTEM ARCHITECTURE</span><h2>서비스 간 연결 구조.</h2><div class="case-architecture"><div>Web / Desktop Client<small>React · Tauri</small></div><i>→</i><div>Backend API<small>Service Integration</small></div><i>→</i><div>AI & Data Services<small>Python · PostgreSQL</small></div></div><p class="case-note">개념적 구조이며, 추후 검증된 실제 아키텍처 다이어그램으로 교체할 수 있습니다.</p></section>
+        <section id="testing" class="case-section reveal"><span>05 / TESTING & VALIDATION</span><h2>화면이 아닌 실제 사용 흐름을<br>기준으로 검증했습니다.</h2><p>기능 단위 확인을 넘어 회의 생성부터 결과 확인, 후속 업무 전달까지의 흐름을 따라가며 통합 동작을 점검했습니다. 테스트 중 발견한 오류와 사용성 문제를 정리해 백엔드·AI 팀과 원인 및 수정 방향을 논의했습니다.</p><blockquote>복잡한 보안 절차가 실제 사용자 경험에 미치는 영향도 함께 검토했습니다.</blockquote></section>
+        <section id="lessons" class="case-section reveal"><span>06 / LESSONS LEARNED</span><h2>좋은 기능은 연결 과정까지<br>안정적이어야 합니다.</h2><p>개별 화면의 완성도만큼 서비스 사이의 상태와 예외를 이해하는 일이 중요하다는 것을 배웠습니다. 또한 문제를 재현 가능한 언어로 공유하는 것이 팀의 해결 속도와 품질에 직접적인 영향을 준다는 점을 경험했습니다.</p><div class="tech-list"><span>React</span><span>TypeScript</span><span>Tauri</span><span>Python Backend</span><span>PostgreSQL</span></div></section>
+      </div>
+    </article>
+    <a class="next-project" href="haru-signal.html"><span>NEXT PROJECT</span><strong>하루 시그널</strong><i>↗</i></a>
+  </main>
+  <script type="module" src="/js/main.js"></script>
+</body></html>

@@ -1,0 +1,39 @@
+html{background:var(--bg);color-scheme:dark;scroll-padding-top:88px}
+html[data-theme="light"]{color-scheme:light}
+body{min-width:320px;overflow-x:hidden;background:var(--bg);color:var(--text);font-family:var(--font-sans);font-size:17px;line-height:1.7;letter-spacing:-.018em}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(circle at 72% 3%,rgba(117,229,255,.09),transparent 28%),radial-gradient(circle at 18% 42%,rgba(139,158,255,.055),transparent 27%)}
+::selection{background:var(--accent);color:#08090b}
+h1,h2,h3{font-weight:500;line-height:1.02;letter-spacing:-.06em;text-wrap:balance}
+h2{font-size:clamp(3.4rem,5.3vw,4.75rem)}
+h2 em{color:var(--accent);font-style:normal}
+p{color:var(--text-2)}
+button,a{touch-action:manipulation}
+button{color:inherit;background:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:fixed;top:12px;left:12px;z-index:999;padding:10px 16px;background:var(--accent);color:#08090b;transform:translateY(-160%);transition:transform var(--fast)}
+.skip-link:focus{transform:none}
+.section-label,.eyebrow{font:500 .7rem/1.4 var(--font-mono);letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.section-label span,.eyebrow span{color:var(--accent)}
+.section{position:relative;max-width:var(--max);margin-inline:auto;padding:var(--section) var(--gutter)}
+.section-heading{position:relative;margin-bottom:clamp(70px,8vw,112px)}
+.section-heading .section-label{margin-bottom:28px}
+.section-intro{max-width:560px;font-size:clamp(1rem,1.25vw,1.125rem);line-height:1.9}
+.split-heading{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);gap:clamp(48px,8vw,120px);align-items:end}
+.section-tint{max-width:none;background:var(--bg-2)}
+.section-tint>*{width:min(calc(100% - 2 * var(--gutter)),calc(var(--max) - 2 * var(--gutter)));margin-inline:auto}
+.text-link{display:inline-flex;align-items:center;gap:18px;padding-block:7px;border-bottom:1px solid var(--border-strong);font:500 .7rem var(--font-mono);letter-spacing:.06em;text-transform:uppercase;transition:color var(--fast),border-color var(--fast)}
+.text-link:hover{color:var(--accent);border-color:var(--accent)}
+.text-link span,.button span{transition:transform var(--normal) var(--ease)}
+.text-link:hover span,.button:hover span{transform:translate(3px,-3px)}
+.scroll-progress{position:fixed;z-index:180;inset:0 0 auto;height:2px;pointer-events:none}.scroll-progress i{display:block;width:100%;height:100%;background:linear-gradient(90deg,var(--accent-2),var(--accent));transform:scaleX(0);transform-origin:left}
+.ambient-noise{position:fixed;z-index:190;inset:0;opacity:.02;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitchTiles'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.cursor-dot,.cursor-ring{display:none}
+@media(pointer:fine){
+  body.has-custom-cursor .project-visual,body.has-custom-cursor .next-project{cursor:none}
+  .cursor-dot,.cursor-ring{display:block;position:fixed;left:0;top:0;z-index:999;pointer-events:none;border-radius:50%;opacity:0}
+  .cursor-dot{width:4px;height:4px;margin:-2px;background:var(--accent)}
+  .cursor-ring{width:34px;height:34px;margin:-17px;border:1px solid rgba(117,229,255,.5);transition:width .3s var(--ease),height .3s var(--ease),margin .3s var(--ease),background .3s,border-color .3s,opacity .2s}
+  .cursor-ring span{position:absolute;inset:0;display:grid;place-items:center;opacity:0;font:500 .5rem var(--font-mono);color:#08090b;letter-spacing:.1em;transition:opacity .2s}
+  .cursor-ring.cursor-active{width:76px;height:76px;margin:-38px;background:var(--accent);border-color:transparent}.cursor-ring.cursor-active span{opacity:1}
+}

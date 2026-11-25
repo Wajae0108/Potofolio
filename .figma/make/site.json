@@ -1,0 +1,10 @@
+{
+  "description": "Explore Kim Wonjae’s software and cloud engineering portfolio, featuring projects, technical skills, engineering process, and contact details for employers and collaborators.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
